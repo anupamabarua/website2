@@ -4,6 +4,22 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="Stylesheet" href="style.css">
+    <style>
+    footer {
+        text-align: center;
+    }
+    </style>
+    <script>
+        function init() {
+          var loc = window.location.href;
+          var HTMLvalidLinkStr = 'http://validator.w3.org/check?uri=' + loc;
+          var CSSvalidLinkStr = 'http://jigsaw.w3.org/css-validator/validator?uri=' +
+                                loc + '?profile=css3';
+          document.getElementById("vLink1").setAttribute("href", HTMLvalidLinkStr);
+          document.getElementById("vLink2").setAttribute("href", CSSvalidLinkStr);
+        }
+        window.onload = init;
+        </script>
     </head>
     <body>
  <section class="header" > 
@@ -27,19 +43,13 @@
 
 
       </section>  
-
-    <footer>
+      <footer>
         <hr>
         <a id="vLink1">
         <strong> HTML </strong> Valid! </a> |
         <a id="vLink2">
         <strong> CSS </strong> Valid! </a>
         </footer>
-        
-
-
-
-
     </body>
 </html>
 

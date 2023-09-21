@@ -66,20 +66,4 @@ sub-header{
 
 a{ 
     color: black;
-}
-
-footer a strong {
-    font-weight: bold;
-    color: #FFF;
-    background-color: rgb(0, 0, 0);
-    padding-left: 5px;
-    margin-right: 2px;
-}
-footer a:hover {
-    color: #FFF;
-    background-color: rgb(0, 0, 0);
-}
-footer a:hover strong {
-    color: rgb(0, 0, 0);
-    background-color: #DDD;
 }  
