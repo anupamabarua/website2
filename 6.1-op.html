@@ -3,6 +3,26 @@
         footer {
             text-align: center;
         }
+        h3{
+            text-align: center;
+            position: relative;
+            top: 75px;
+        }
+        h4{
+            text-align: center;
+            position: relative;
+            top: 75px;
+        }
+        form{
+            text-align: center;
+            position: relative;
+            top: 75px;
+        }
+        h5{
+            text-align: center;
+            position: relative;
+            top: 75px;
+        }
         </style>
         <script>
             function init() {
@@ -34,14 +54,14 @@
         <title>Optional Lab 6-1</title>
 <script>
     function vote() {
-        var t = "Your favorite sport is: ";
+        var t = "Your favorite flavor is: ";
         for (i = 0; i < document.myform.sports.length; i++) {
             if (document.myform.sports[i].checked == true) {
                 t = t + document.myform.sports[i].value;
             }
         }
-        if (t == "Your favorite sport is: ") {
-            document.getElementById("txt").value = "Choose a sport";
+        if (t == "Your favorite flavor is: ") {
+            document.getElementById("txt").value = "Choose a flavor";
         } else {
             document.getElementById("txt").value = t;
             document.getElementById("txt1").value = t;
@@ -64,7 +84,7 @@
 <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
 <hr/>
 <h4>Event Handler Examples</h4>
-Vote for your favorite ice cream flavor:
+<h5>Vote for your favorite ice cream flavor:</h5>
 <form name="myform">
     <input type="radio" name="flavor" value="choclate" />Choclate<br/>
     <input type="radio" name="flavor" value="Vanilla" />Vanilla<b />
